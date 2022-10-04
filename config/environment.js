@@ -1,5 +1,6 @@
 'use strict';
 
+
 module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'weather',
@@ -21,7 +22,7 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
       WEATHER_API_KEY : process.env.WEATHER_API_KEY,
-      GEO_API_KEY : process.env.WEATHER_API_KEY
+      GEO_API_KEY : process.env.GEO_API_KEY
     },
   };
 
