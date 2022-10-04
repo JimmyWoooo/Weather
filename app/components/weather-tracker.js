@@ -166,7 +166,6 @@ export default class WeatherTrackerComponent extends Component {
     async loadLocationZip(){
         let response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.zipcode}&key=${this.geoKey}`);
         let loc = await response.json();  
-        console.log(loc)
         this.lat = loc.results[0].geometry.location.lat;
         this.lon = loc.results[0].geometry.location.lng;
         this.location = loc.results[0].formatted_address;

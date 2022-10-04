@@ -6,7 +6,6 @@ export default class WeeklyComponent extends Component {
     @tracked unit;
     @tracked weatherDesc;
     weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    @tracked setEvent = false;
 
     constructor(){
         super(...arguments);
@@ -37,12 +36,12 @@ export default class WeeklyComponent extends Component {
             this.loadIcon(this.weather.daily[x].weather[0].icon, 'iconW' + x, x)
         }
         let tp = document.querySelector('#weekly');
-        if(!this.setEvent){
-            tp.addEventListener('wheel', (e) => {
-                tp.scrollLeft += e.deltaY/1.5;
-            });
-            this.setEvent = true;
-        }
+        tp.removeEventListener('wheel', () =>{
+
+        })
+        tp.addEventListener('wheel', (e) => {
+            tp.scrollLeft += e.deltaY/1.5;
+        });
     }
 
     printData(value){
