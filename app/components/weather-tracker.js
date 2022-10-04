@@ -221,7 +221,7 @@ export default class WeatherTrackerComponent extends Component {
     }
 
     async getData(unit){
-        let response = await fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${this.lat}&lon=${this.lon}&appid=${this.weatherKey}&units=`+unit);
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${this.lat}&lon=${this.lon}&appid=${this.weatherKey}&units=`+unit);
         this.weather = await response.json();
         this.update();
     }
