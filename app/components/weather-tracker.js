@@ -54,6 +54,7 @@ export default class WeatherTrackerComponent extends Component {
             }
             navigator.geolocation.getCurrentPosition(sucessCall, errorCall);
         }
+        console.log(this.weatherKey)
         this.weatherDesc = this.args.weatherDesc;
     }
 
