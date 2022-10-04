@@ -1,0 +1,59 @@
+#hourly{
+    width: 30rem;
+    height: 29rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#stick{
+    display: flex;
+    flex-direction: row;
+}
+
+#stickyTime, #stickyTemp, #stickyHumid, #stickyCond{
+    width: 100%;
+    text-align: center;
+} 
+
+.HrTime, .HrTemp, .HrHumid, .HrCond{
+    width: 5rem;
+    text-align: center;
+} 
+
+#data{
+    padding-top: .5rem;
+    overflow-y: scroll;
+}
+
+.HrSummary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+    user-select: none;
+    height: 2.5rem;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.detail-container{
+    background: rgba(0, 0, 0, 0.6);
+    width: 70%;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid rgb(40, 108, 134);
+    user-select: none;
+}
+
+.hourlyIcon{
+    width: 32px;
+    height: 32px;
+}

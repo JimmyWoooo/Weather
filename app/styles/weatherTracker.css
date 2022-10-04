@@ -1,0 +1,93 @@
+#weather{
+    width: 30rem;
+    height: 29rem;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    padding: 1rem;
+    border-radius: 1rem;
+    user-select: none;
+}
+
+#updated{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.switchbar{
+    position: absolute;
+    top: .7rem;
+    right: .6rem;
+    width: 3.5rem;
+    height: 1.5rem;
+    background: rgb(94, 94, 94);
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider.f{
+    transform: translateX(50%);
+}
+
+.slider.c{
+    transform: translateX(-50%);
+}
+
+.slider{
+    width: 1.7rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background: white;
+    transition: transform .2s ease;
+}
+
+.tempLabel{
+    position: absolute;
+}
+
+
+#icon{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+#search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#searchbar{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    border: none;
+    font-size: 1.1rem;
+    color: rgb(34, 34, 34);
+}
+
+.mapIcon{
+    font-size: 1.5rem;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #1a7ab3;
+    box-shadow: 0 0 5px 3px #1a7ab3
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.fa{
+   cursor: pointer; 
+}
+
+.fa:active{
+    scale: .9;
+}

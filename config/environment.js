@@ -20,6 +20,8 @@ module.exports = function (environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      WEATHER_API_KEY : "37f9097893bba333ac876d1e672a782a",
+      GEO_API_KEY : "AIzaSyBf5GMF_8AezeATWLIseofy8cDPa7QgboY"
     },
   };
 

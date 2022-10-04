@@ -1,0 +1,44 @@
+#weekly{
+    width: 61rem;
+    background: rgba(0, 0, 0, 0.6);
+    height: 420px;
+    bottom: 1%;
+    position: absolute;
+    display: flex;
+    border-radius: 1rem;  
+    overflow-x: scroll;
+    user-select: none;
+}
+
+#wData{
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.days{
+    width: 13rem;
+    height: 100%;
+    border: 2px solid #1a7ab3;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.days canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: .5rem;
+}
+
+.wDay{
+    text-align: center;
+    border: 1px solid #515260;
+    border-radius: 50px;
+    padding: 2px;
+    background: #4a4a4e;
+    width: 90%;
+    margin: auto;
+}
+

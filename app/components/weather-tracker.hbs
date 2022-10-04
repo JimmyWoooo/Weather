@@ -1,0 +1,57 @@
+<div id="weather" class="noselect">
+    <div id = "updated">
+        As of {{date}}
+    </div>
+    <div id = "search">
+        <i class="mapIcon fa fa-map-marker" aria-hidden="true" id="iconClick" onclick={{action getLoc}}></i>
+        <input id="searchbar"type="text" value={{zipcode}} onkeyup={{action setZip}} placeholder="Enter your city or zipcode" maxlength="15">
+        <i class="refreshIcon fa fa-refresh" onclick={{action loadweatherZip}} id="iconClick" aria-hidden="true"></i>
+        <i class="closeIcon fa fa-times" aria-hidden="true" id="iconClick" onclick={{action clearZip}}></i>
+    </div>
+    <div id="location">
+        <h3>{{location}}</h3>
+    </div>
+    <div id="temperature">
+        <h1>{{temperature}} {{get-units unit}} </h1>
+        <div id="switch" onclick={{action changeUnits}}>
+            <div class="switchbar">
+                <div class="tempLabel">°F &nbsp;°C</div>
+                <div class="slider f"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        High / Low: 
+        <br>{{high}} {{get-units unit}} / {{low}} {{get-units unit}}
+    </div>
+    <div>
+        Description: {{main}}, {{description}}
+    </div>
+    <div>
+        Feels like: {{feels}} {{get-units unit}}
+    </div>
+    <div>
+        Precipitation: {{precipitation}}%
+    </div>
+    <div>
+        Wind Speed: {{ws}} {{metric unit}}
+    </div>  
+    <div>
+        Humidity: {{humidity}}%
+    </div>
+    <div>
+        Sunrise: {{sunRise}}
+    </div>
+    <div>
+        Sunset: {{sunSet}}
+    </div>
+    <div id="icon" >    
+        <canvas id="iconCurrent" width="100" height="100"></canvas>
+    </div>
+</div>
+
+
+{{#if loaded}}
+    <Hourly @weatherHourly = {{weather}} @unit = {{get-units unit}} @weatherDesc = {{weatherDesc}}/>
+    <Weekly @weatherWeekly = {{weather}} @unit = {{get-units unit}} @weatherDesc = {{weatherDesc}}/>
+{{/if}}

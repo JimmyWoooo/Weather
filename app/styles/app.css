@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import 'weatherTracker.css';
+@import 'hourly.css';
+@import 'weekly.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(rgb(5 13 53), rgb(53 103 140));
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* #content{
+    width: 180px;
+    height: 310px;
+    margin: -60px 100px 0px 10px;
+    border: 1px solid #1a7ab3;
+    padding: 10px;
+    border-radius: 10px;
+    transform: rotate(-270deg);
+    float: right;
+} */
+
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+  }
+  
+::-webkit-scrollbar-track {
+    border: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(51 59 66);
+    border-radius: 10px;
+}
+
+#iconCurrent{
+    width: 128px;
+    height: 128px;
+}
